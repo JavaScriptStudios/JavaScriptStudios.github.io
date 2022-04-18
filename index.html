@@ -2,29 +2,54 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>New webpage</title>
-      <style>
+        <title>JavaScript Studios - Home</title>
+        <style>
       
-        #body {
-        
-          background-color: rgb(255, 212, 221);
-        
-        }
-        
-        #heading {
+            #body {
             
-            text-align: center;
-            font-size: 3em;
-            font-family: "Rockwell";
-            margin-top: 0px;
+              background-color: rgb(255, 212, 221);
             
-        }
+            }
+            
+            #heading {
+                
+                text-align: center;
+                font-size: 3em;
+                font-family: "Rockwell";
+                margin-top: 0px;
+                
+            }
+            
+            button {
+                
+                margin-left: 20px;
+                
+            }
       
-      </style>
+        </style>
     </head>
     <body id = "body">
         
         <h1 id = "heading">JavaScriptStudios</h1>
         
+        <h2>Projects:</h2>
+        
+        <button id = "oregon">Oregon Trail</button>
+        
     </body>
+    
+    <script>
+        
+        var oregonClick = document.getElementById("oregon");
+        
+        var onButtonClick = function(){
+            
+            window.open("/games/oregon_trail.html");
+            
+        };
+        
+        oregonClick.addEventListener("click", onButtonClick)
+        
+    </script>
+    
 </html>
