@@ -3,7 +3,41 @@
     <head>
         <meta charset="utf-8">
         <title>JavaScript Studios - Oregon Trail</title>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
     </head>
-    <body>
+    <body>        
+        <script type = "application/processing">
+        
+            var scene = "opening";
+            
+            var backColor = color(0, 0, 0);
+            
+            var drawScenes = function(){
+            
+                switch(scene){
+                
+                    case "opening":
+                    
+                        background(backColor);
+                    
+                        break;
+                
+                }
+            
+            };
+            
+            draw = function(){
+            
+                if(scene === "opening"){
+                
+                    drawScenes("opening");
+                    backColor = color(0, 0, 0);
+                
+                }
+            
+            };
+        
+        </script>      
+        <canvas></canvas>
     </body>
 </html>
